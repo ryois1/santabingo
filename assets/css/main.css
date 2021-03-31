@@ -1,0 +1,105 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.navbar-translucent {
+    background-color: rgba(255, 255, 255, .15) !important;  
+    backdrop-filter: blur(5px) !important;
+ }
+.global-content {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.content{
+    z-index: 10;
+}
+.background-image{
+    background-image: linear-gradient(41deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.6) 100%), url("../background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.how-to-play{
+    padding-top: 12px;
+    font-family: Architects Daughter;
+    font-size: 1.2rem;
+}
+.alert{
+    backdrop-filter: blur(2px) !important;
+}
+.santa-bingo-header{
+    color: #E40010;
+    text-align: center;
+    font-family: Nerko One;
+    font-size: 3.6rem !important;
+}
+.santa-bingo-navtext{
+    color: #E40010 !important;
+    font-family: Nerko One;
+    font-size: 1.2rem !important;
+}
+.top-row{
+    color: #E40010;
+    text-align: center;
+    font-family: Nerko One;
+    font-size: 3.6rem !important;
+    background-color: #e3e3e3;
+    outline: 2px solid #ccc;
+    height: 90px;
+    line-height: 90px;
+}
+.number-rows{
+    color: #E40010;
+    text-align: center;
+    font-family: Architects Daughter;
+    font-size: 3.5vh !important;
+    line-height: 90px;
+    height: 90px;
+    background-color: #e3e3e3;
+    outline: 2px solid #ccc;
+}
+.top-row-container{
+    padding-bottom: 60px;
+}
+.bingo-card{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.free-spot{
+    color: #00B32C;
+    text-align: center;
+    font-family: Architects Daughter;
+    font-size: 3.5vh !important;
+    height: 90px;
+    line-height: 125px;
+    outline: 2px solid #ccc;
+    background-image: url("../santa-claus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e3e3e3;
+
+}
+.overlay{
+    color: #00B32C;
+    text-align: center;
+    font-family: Architects Daughter;
+    font-size: 3.5vh !important;
+    height: 90px;
+    line-height: 125px;
+    outline: 2px solid #ccc;
+    background-image: url("../santa-claus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e3e3e3;
+}
+.reset-card{
+    padding-top: 60px;
+}
