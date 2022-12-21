@@ -48,7 +48,7 @@ html, body{
     font-size: 1.2rem !important;
 }
 .top-row{
-    color: var(--red-text);
+    color: var(--uncovered-text);
     text-align: center;
     font-family: Nerko One;
     font-size: 3.6rem !important;
@@ -58,7 +58,7 @@ html, body{
     line-height: 90px;
 }
 .number-rows{
-    color: var(--red-text);
+    color: var(--uncovered-text);
     text-align: center;
     font-family: Architects Daughter;
     font-size: 3.5vh !important;
@@ -76,7 +76,7 @@ html, body{
     left: 0;
 }
 .free-spot{
-    color: var(--green-text);
+    color: var(--covered-text);
     text-align: center;
     font-family: Architects Daughter;
     font-size: 3.5vh !important;
@@ -91,7 +91,7 @@ html, body{
 
 }
 .overlay{
-    color: var(--green-text);
+    color: var(--covered-text);
     text-align: center;
     font-family: Architects Daughter;
     font-size: 3.5vh !important;
@@ -127,7 +127,8 @@ html, body{
     --primary-cell-bg-color: #E3E3E3;
     --cell-outline-color: #CCCCCC;
     --red-text: #E40010;
-    --green-text: #00B32C;
+    --uncovered-text: #E40010;
+    --covered-text: #00B32C;
     --btn-bg-color: #F8F9FA;
     --btn-color: #212529;
     --btn-hover-bg-color: #e2e6ea;
@@ -139,7 +140,8 @@ html, body{
         --primary-cell-bg-color: #1F1A24;
         --cell-outline-color: #332940;
         --red-text: #E40010;
-        --green-text: #00B32C;
+        --uncovered-text: #FFC745;
+        --covered-text: #00B32C;
         --btn-bg-color: #212529;
         --btn-color: #F8F9FA;
         --btn-hover-bg-color: #212529;
