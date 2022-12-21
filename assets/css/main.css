@@ -121,11 +121,21 @@ html, body{
     color: var(--btn-color);
     text-decoration: none;
 }
-
+.swal2-popup {
+    background: var(--primary-cell-bg-color) !important;
+}
+.swal2-title{
+    color: var(--normal-text) !important;
+}
+.swal2-icon.swal2-warning {
+    border-color: var(--uncovered-text) !important;
+    color: var(--uncovered-text) !important;
+}
 /* Light Theme */
 :root {
     --primary-cell-bg-color: #E3E3E3;
     --cell-outline-color: #CCCCCC;
+    --normal-text: #212529;
     --red-text: #E40010;
     --uncovered-text: #E40010;
     --covered-text: #00B32C;
@@ -139,6 +149,7 @@ html, body{
     :root {
         --primary-cell-bg-color: #1F1A24;
         --cell-outline-color: #332940;
+        --normal-text: #E3E3E3;
         --red-text: #E40010;
         --uncovered-text: #FFC745;
         --covered-text: #00B32C;
