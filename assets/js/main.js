@@ -157,5 +157,5 @@ function resetCard(card_id){
 function randomBackground(){
     const width = window.innerWidth * window.devicePixelRatio;
     const height = window.innerHeight * window.devicePixelRatio;
-    $(".background-image").css("background-image", `linear-gradient(180deg, rgba(42,135,3,0.8) 0%, rgba(255,0,0,0.8) 100%), url('https://source.unsplash.com/random/${width}x${height}/?christmas')`);
+    $(".background-image").css("background-image", `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url('https://source.unsplash.com/random/${width}x${height}/?christmas')`);
 }
