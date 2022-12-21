@@ -124,7 +124,7 @@ html, body{
 .swal2-popup {
     background: var(--primary-cell-bg-color) !important;
 }
-.swal2-title{
+.swal2-title, .swal2-content{
     color: var(--normal-text) !important;
 }
 .swal2-icon.swal2-warning {
