@@ -1,6 +1,9 @@
 html, body{
     height: 100%;
     width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .navbar-translucent {
     background-color: rgba(255, 255, 255, .15) !important;  
@@ -15,9 +18,10 @@ html, body{
     z-index: 10;
 }
 .background-image{
-    background-image: linear-gradient(41deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.6) 100%), url("../background.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,5,36,0.7) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -33,35 +37,35 @@ html, body{
     backdrop-filter: blur(2px) !important;
 }
 .santa-bingo-header{
-    color: #E40010;
+    color: var(--red-text);
     text-align: center;
     font-family: Nerko One;
     font-size: 3.6rem !important;
 }
 .santa-bingo-navtext{
-    color: #E40010 !important;
+    color: var(--red-text) !important;
     font-family: Nerko One;
     font-size: 1.2rem !important;
 }
 .top-row{
-    color: #E40010;
+    color: var(--red-text);
     text-align: center;
     font-family: Nerko One;
     font-size: 3.6rem !important;
-    background-color: #e3e3e3;
-    outline: 2px solid #ccc;
+    background-color: var(--primary-cell-bg-color);
+    outline: 2px solid var(--cell-outline-color);
     height: 90px;
     line-height: 90px;
 }
 .number-rows{
-    color: #E40010;
+    color: var(--red-text);
     text-align: center;
     font-family: Architects Daughter;
     font-size: 3.5vh !important;
     line-height: 90px;
     height: 90px;
-    background-color: #e3e3e3;
-    outline: 2px solid #ccc;
+    background-color: var(--primary-cell-bg-color);
+    outline: 2px solid var(--cell-outline-color);
 }
 .top-row-container{
     padding-bottom: 60px;
@@ -72,34 +76,72 @@ html, body{
     left: 0;
 }
 .free-spot{
-    color: #00B32C;
+    color: var(--green-text);
     text-align: center;
     font-family: Architects Daughter;
     font-size: 3.5vh !important;
     height: 90px;
     line-height: 125px;
-    outline: 2px solid #ccc;
+    outline: 2px solid var(--cell-outline-color);
     background-image: url("../santa-claus.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e3e3e3;
+    background-color: var(--primary-cell-bg-color);
 
 }
 .overlay{
-    color: #00B32C;
+    color: var(--green-text);
     text-align: center;
     font-family: Architects Daughter;
     font-size: 3.5vh !important;
     height: 90px;
     line-height: 125px;
-    outline: 2px solid #ccc;
+    outline: 2px solid var(--cell-outline-color);
     background-image: url("../santa-claus.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e3e3e3;
+    background-color: var(--primary-cell-bg-color);
 }
 .reset-card{
     padding-top: 60px;
+}
+.btn-reset {
+    color: var(--btn-color);
+    background-color: var(--btn-bg-color);
+    border-color: var(--btn-bg-color);
+}
+.btn-reset:hover {
+    color: var(--btn-color);
+    background-color: var(--btn-hover-bg-color);
+    border-color: #dae0e5;
+}
+.btn:hover {
+    color: var(--btn-color);
+    text-decoration: none;
+}
+
+/* Light Theme */
+:root {
+    --primary-cell-bg-color: #E3E3E3;
+    --cell-outline-color: #CCCCCC;
+    --red-text: #E40010;
+    --green-text: #00B32C;
+    --btn-bg-color: #F8F9FA;
+    --btn-color: #212529;
+    --btn-hover-bg-color: #e2e6ea;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-cell-bg-color: #1F1A24;
+        --cell-outline-color: #332940;
+        --red-text: #E40010;
+        --green-text: #00B32C;
+        --btn-bg-color: #212529;
+        --btn-color: #F8F9FA;
+        --btn-hover-bg-color: #212529;
+    }
 }

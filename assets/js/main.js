@@ -127,9 +127,10 @@ function coverSpot(div) {
 
 $(document).ready(function () {
     setupCard("bingo_card");
+    randomBackground();
 });
 
-window.onbeforeunload = function (event) {
+window.onbeforeunload = function () {
     return confirm("Do you want to leave this page? This will lose your progress!");
 };
 
@@ -151,4 +152,10 @@ function resetCard(card_id){
             console.log(`Covered Spots: ${covered_spots}`);
         }
     })
+}
+
+function randomBackground(){
+    const width = window.innerWidth * window.devicePixelRatio;
+    const height = window.innerHeight * window.devicePixelRatio;
+    $(".background-image").css("background-image", `linear-gradient(180deg, rgba(42,135,3,0.8) 0%, rgba(255,0,0,0.8) 100%), url('https://source.unsplash.com/random/${width}x${height}/?christmas')`);
 }
