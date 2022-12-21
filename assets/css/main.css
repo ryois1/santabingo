@@ -83,7 +83,7 @@ html, body{
     height: 90px;
     line-height: 125px;
     outline: 2px solid var(--cell-outline-color);
-    background-image: url("../santa-claus.png");
+    background-image: url("../santa-claus.webp"), url("../santa-claus.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,7 +98,7 @@ html, body{
     height: 90px;
     line-height: 125px;
     outline: 2px solid var(--cell-outline-color);
-    background-image: url("../santa-claus.png");
+    background-image: url("../santa-claus.webp"), url("../santa-claus.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
