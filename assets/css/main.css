@@ -83,7 +83,7 @@ html, body{
     height: 90px;
     line-height: 125px;
     outline: 2px solid var(--cell-outline-color);
-    background-image: url("../santa.webp"), url("../santa.png");
+    background-image: url("../santa.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,7 +98,7 @@ html, body{
     height: 90px;
     line-height: 125px;
     outline: 2px solid var(--cell-outline-color);
-    background-image: url("../santa.webp"), url("../santa.png");
+    background-image: url("../santa.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
