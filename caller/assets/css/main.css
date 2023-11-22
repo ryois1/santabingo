@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: var(--primary-cell-bg-color);
 }
 .navbar-translucent {
     background-color: rgba(255, 255, 255, .15) !important;  
@@ -51,4 +52,57 @@ html, body{
 }
 .call-button{
     padding-bottom: 30px;
+}
+th:first-child, td:first-child{
+  position:sticky;
+  left:0px;
+  background-color: var(--primary-cell-bg-color);
+  color: var(--normal-text);
+}
+
+.table{
+    color: var(--normal-text)
+}
+
+#callResult{
+    color: var(--normal-text);
+
+}
+
+.swal2-popup {
+    background: var(--primary-cell-bg-color) !important;
+}
+.swal2-title, .swal2-content{
+    color: var(--normal-text) !important;
+}
+.swal2-icon.swal2-warning {
+    border-color: var(--uncovered-text) !important;
+    color: var(--uncovered-text) !important;
+}
+
+:root {
+    --primary-cell-bg-color: #E3E3E3;
+    --cell-outline-color: #CCCCCC;
+    --normal-text: #212529;
+    --red-text: #E40010;
+    --uncovered-text: #E40010;
+    --covered-text: #00B32C;
+    --btn-bg-color: #F8F9FA;
+    --btn-color: #212529;
+    --btn-hover-bg-color: #e2e6ea;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-cell-bg-color: #1F1A24;
+        --cell-outline-color: #332940;
+        --normal-text: #E3E3E3;
+        --red-text: #E40010;
+        --uncovered-text: #FFC745;
+        --covered-text: #00B32C;
+        --btn-bg-color: #212529;
+        --btn-color: #F8F9FA;
+        --btn-hover-bg-color: #212529;
+    }
 }

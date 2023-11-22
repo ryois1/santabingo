@@ -106,20 +106,32 @@ function coverSpot(div) {
         $(`#${div}`).addClass("overlay");
         let value = $(`#${div}`).attr("data-value");
         console.log(`Covered up div: ${div} with value: ${value}`);
+        let winning_numbers = [];
         if (covered_spots.indexOf(value) === -1) covered_spots.push(div);
         for (var i = 0; i < possibleWinners; i++) {
             var cellExists = 0;
+            winning_numbers = [];
             for (var j = 0; j < 5; j++) {
                 if ($.inArray(winners[i][j], covered_spots) > -1) {
                     cellExists++;
+                    // Get number from div
+                    let value = $(`#${winners[i][j]}`).attr("data-value");
+                    // Add to winning numbers array
+                    winning_numbers.push(value);
                 }
             }
             if (cellExists == 5) {
-                Swal.fire(
-                    'Possible Bingo!',
-                    'You have a possible bingo, dismiss this popup to view your card.',
-                    'info'
-                )
+                // Get the 5 winning numbers
+                console.log(`Winning Numbers: ${winning_numbers}`);
+                Swal.fire({
+                    title: 'Bingo!',
+                    html: 'You have a bingo, show this QR code to the caller. <br><div id="qrcode"></div>',
+                    icon: 'info'
+                })
+                const covered_numbers = covered_spots.map(function (x) {
+                    return $(`#${x}`).attr("data-value");
+                });
+                new QRCode(document.getElementById("qrcode"), winning_numbers.join(","));
             }
         }
     }
